@@ -21,6 +21,7 @@ body {
     background-image: url('./assets/images/background.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1,
@@ -34,22 +35,33 @@ h6 {
 
 p,
 span,
-a {
+a,
+li {
     font-family: "oswald-extra-light";
 }
 
+li {
+    list-style-type: none;
+    font-size: 1.15rem;
+}
+
+.section {
+    max-height: 435px;
+}
+
 /* ==== FIRST SECTION STYLES ==== */
-#first-section-container {
+#section-container {
     justify-content: center;
     text-align: center;
     height: 100vh;
     align-items: center;
-}
-
-#first-section-continue {
-    margin-top: 5rem;
+    flex-flow: column;
 }
 
 .first-section-header-content {
     font-size: 3.5rem;
+}
+
+.second-section-content {
+    display: flex;
 }
