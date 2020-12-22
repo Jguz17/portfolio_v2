@@ -49,6 +49,10 @@ li {
     max-height: 435px;
 }
 
+.icon:hover {
+    cursor: pointer;
+}
+
 /* ==== FIRST SECTION STYLES ==== */
 #section-container {
     justify-content: center;
