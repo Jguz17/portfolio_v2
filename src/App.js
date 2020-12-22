@@ -14,7 +14,7 @@ const App = () => {
           {/* <FirstSection/> */}
           <SecondSection/>
           <Arrow/>
-          {/* <Nav/> */}
+          <Nav/>
         </Grid>
       </Grid>
       <Grid item md={2}/>
