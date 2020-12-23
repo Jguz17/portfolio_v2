@@ -21,6 +21,7 @@ body {
     background-image: url('./assets/images/background.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1,
@@ -34,22 +35,59 @@ h6 {
 
 p,
 span,
-a {
+a,
+li {
     font-family: "oswald-extra-light";
 }
 
+li {
+    list-style-type: none;
+    font-size: 1.15rem;
+}
+
+.section {
+    max-height: 435px;
+    /* display: flex; */
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
 /* ==== FIRST SECTION STYLES ==== */
-#first-section-container {
+#section-container {
     justify-content: center;
     text-align: center;
     height: 100vh;
     align-items: center;
-}
-
-#first-section-continue {
-    margin-top: 5rem;
+    flex-flow: column;
 }
 
 .first-section-header-content {
     font-size: 3.5rem;
+}
+
+.second-section-content {
+    display: flex;
+}
+
+/* ==== NAV STYLES ==== */
+.nav-container {
+    position: fixed;
+    right: 2.5%;
+    max-height: 600px;
+}
+
+.desktop-nav {
+    border: 2px solid black;
+    height: 450px;
+    width: 100px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-flow: column; */
+    /* align-items: center; */
 }
