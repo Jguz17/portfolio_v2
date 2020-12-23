@@ -47,6 +47,7 @@ li {
 
 .section {
     max-height: 435px;
+    /* display: flex; */
 }
 
 .icon:hover {
@@ -72,7 +73,7 @@ li {
 
 /* ==== NAV STYLES ==== */
 .nav-container {
-    position: absolute;
+    position: fixed;
     right: 2.5%;
     max-height: 600px;
 }
