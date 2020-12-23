@@ -40,6 +40,10 @@ li {
     font-family: "oswald-extra-light";
 }
 
+a {
+    color: black;
+}
+
 li {
     list-style-type: none;
     font-size: 1.15rem;
