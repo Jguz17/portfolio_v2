@@ -4,6 +4,7 @@ import FirstSection from './components/FirstSection'
 import SecondSection from './components/SecondSection'
 import ThirdSection from './components/ThirdSection'
 import FourthSection from './components/FourthSection'
+import FifthSection from './components/FifthSection'
 import Arrow from './components/layout/Arrow'
 import Nav from './components/layout/Nav'
 
@@ -13,11 +14,12 @@ const App = () => {
       <Grid item md={2}/>
       <Grid container item md={8}>
         <Grid container item xs={12} id="section-container">
-          {/* <FirstSection/> */}
-          {/* <SecondSection/> */}
-          {/* <ThirdSection/> */}
+          <FirstSection/>
+          <SecondSection/>
+          <ThirdSection/>
           <FourthSection/>
-          {/* <Arrow/> */}
+          <FifthSection/>
+          <Arrow/>
           <Nav/>
         </Grid>
       </Grid>
