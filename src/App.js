@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import FirstSection from './components/FirstSection'
 import SecondSection from './components/SecondSection'
 import ThirdSection from './components/ThirdSection'
+import FourthSection from './components/FourthSection'
 import Arrow from './components/layout/Arrow'
 import Nav from './components/layout/Nav'
 
@@ -14,7 +15,8 @@ const App = () => {
         <Grid container item xs={12} id="section-container">
           {/* <FirstSection/> */}
           {/* <SecondSection/> */}
-          <ThirdSection/>
+          {/* <ThirdSection/> */}
+          <FourthSection/>
           {/* <Arrow/> */}
           <Nav/>
         </Grid>

@@ -11,7 +11,7 @@ const Nav = () => {
         <Share2 class="icon" stroke-width=".5" width="75" height="75"/>
     </div>
 
-    const mobile = <div className="mobile-nav"><Home/></div>
+    // const mobile = <div className="mobile-nav"><Home/></div>
 
     return (
         <div className="nav-container">
