@@ -5,9 +5,9 @@ import Grid from '@material-ui/core/Grid';
 
 const MobileNav = () => {
 
-    if (window.screen.width >= 769) {
-        return null
-    }
+    // if (window.screen.width >= 769) {
+    //     return null
+    // }
 
     const handlePlusClick = () => {
         // document.querySelector('#overlay').style.display = "block"
