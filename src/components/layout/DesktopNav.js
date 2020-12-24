@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 const DesktopNav = () => {
 
-    if (window.screen.width <= 768) {
-        return null
-    }
+    // if (window.screen.width <= 768) {
+    //     return null
+    // }
 
     const desktop = <div className="desktop-nav">
         <Link to="/"><Home class="icon" stroke-width=".5" width="75" height="75"/></Link>
