@@ -6,6 +6,7 @@ import ThirdSection from './components/ThirdSection'
 import FourthSection from './components/FourthSection'
 import FifthSection from './components/FifthSection'
 import DesktopNav from './components/layout/DesktopNav'
+import MobileNav from './components/layout/MobileNav'
 import { BrowserRouter as Router,
   Switch,
   Route
@@ -27,7 +28,9 @@ const App = () => {
                   <Route path='/connect' component={FifthSection}/>
                   <Route path='/' component={FirstSection}/>
                 </Switch>
+                {/* <div id="overlay"></div> */}
               <DesktopNav/>
+              <MobileNav/>
             </Grid>
           </Grid>
         <Grid item md={2}/>

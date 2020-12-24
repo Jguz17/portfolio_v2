@@ -96,15 +96,38 @@ li {
     /* align-items: center; */
 }
 
+.mobile-container {
+    position: fixed;
+    right: 2.5%;
+    bottom: 2.5%;
+}
+
+
+/* ==== MOBILE NAV STYLES ==== */
+
+#overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: rgba(229, 229, 229, .75);
+    display: none;
+}
+
+#minus-circle {
+    display: none;
+}
+
+.mobile-icons-container {
+    display: none;
+    flex-direction: column;
+}
+
+.mobile-icon {
+    padding-bottom: 1rem;
+}
+
 @media all and (max-width: 480px) { 
     body {
         background-image: url('./assets/images/mobile-bg-1.jpg');
     }
 }
-
-/* ==== MOBILE NAV STYLES ==== */
-/* #plus-icon {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-} */

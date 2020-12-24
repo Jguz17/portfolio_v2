@@ -1,3 +1,3 @@
 // ==== NAV ====
-export const SET_NAV_TYPE = 'SET_NAV_TYPE'
-export const REMOVE_NAV_TYPE = 'REMOVE_NAV_TYPE'
+export const SET_NAV_STATUS = 'SET_NAV_TYPE'
+export const REMOVE_NAV_STATUS = 'REMOVE_NAV_TYPE'

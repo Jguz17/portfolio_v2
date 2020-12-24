@@ -3,33 +3,33 @@ import NavContext from './navContext'
 import navReducer from './navReducer'
 
 import {
-    SET_NAV_TYPE,
-    REMOVE_NAV_TYPE
+    SET_NAV_STATUS,
+    REMOVE_NAV_STATUS
 } from '../types'
 
 const NavState = props => {
     const initialState = {
-        navType: ''
+        navStatus: ''
     }
 
     const [state, dispatch] = useReducer(navReducer, initialState)
 
-    const setNavType = (navType) => {
+    const setNavStatus = (navStatus) => {
         dispatch({
-            type: SET_NAV_TYPE,
-            payload: navType
+            type: SET_NAV_STATUS,
+            payload: navStatus
         })
     }
 
-    const removeNavType = () => {
-        dispatch({ type: REMOVE_NAV_TYPE })
+    const removeNavStatus = () => {
+        dispatch({ type: REMOVE_NAV_STATUS })
     }
 
     return (
         <NavContext.Provider value={{
-            navType: state.navType,
-            setNavType,
-            removeNavType
+            navType: state.navStatus,
+            setNavStatus,
+            removeNavStatus
         }}>
             {props.children}
         </NavContext.Provider>
