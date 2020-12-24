@@ -3,7 +3,8 @@ import Grid from '@material-ui/core/Grid';
 import hungr from '../assets/images/hungr.jpg'
 import zenyx from '../assets/images/zenyx.jpg'
 import vitl from '../assets/images/vitle-media.jpg'
-import Arrow from './layout/Arrow'
+import { ArrowDownCircle } from 'react-feather';
+import { Link } from 'react-router-dom'
 
 const FourthSection = () => {
     return (
@@ -48,7 +49,10 @@ const FourthSection = () => {
                 </Grid>
             </Grid>
             <Grid item container xs={12} style={{ justifyContent: "center", padding: "2rem" }}>
-                <Arrow/>
+                <Link to="/connect">
+                        <ArrowDownCircle stroke-width="1" width="30" height="30" style={{ fontSize: "1.5rem", marginTop: ".5rem" }}/>
+                        <p style={{ fontSize: "1.5rem" }}>Continue to conntect!</p>
+                </Link>  
             </Grid>   
         </Grid>
     )

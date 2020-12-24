@@ -1,6 +1,7 @@
 import React from 'react'
 import TreeImage from '../assets/images/tree.jpg'
-import Arrow from './layout/Arrow'
+import { ArrowDownCircle } from 'react-feather';
+import { Link } from 'react-router-dom'
 
 const SecondSection = () => {
     return (
@@ -42,7 +43,10 @@ const SecondSection = () => {
                     </div>
                 </div>
             </div>
-            <Arrow/>
+            <Link to="/project-catalog">
+                    <ArrowDownCircle stroke-width="1" width="30" height="30" style={{ fontSize: "1.5rem", marginTop: ".5rem" }}/>
+                    <p style={{ fontSize: "1.5rem" }}>Continue to projects</p>
+            </Link>   
         </div>
     )
 }
