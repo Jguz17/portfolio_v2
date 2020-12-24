@@ -46,11 +46,11 @@ const MobileNav = () => {
             <div className="mobile-nav">
                 <PlusCircle id="plus-circle" class="icon" stroke-width=".5" width="75" height="75" onClick={handlePlusClick}/>
                 <div className="mobile-icons-container">
-                    <Link className="mobile-icon" to="/"><Home class="icon" stroke-width=".5" width="85" height="85"/></Link>
-                    <Link className="mobile-icon" to="/about-me"><HelpCircle class="icon" stroke-width=".5" width="85" height="85"/></Link>
-                    <Link className="mobile-icon" to="/project-catalog"><Layers class="icon" stroke-width=".5" width="85" height="85"/></Link>
-                    <Link className="mobile-icon" to="/work-journey"><Briefcase class="icon" stroke-width=".5" width="85" height="85"/></Link>
-                    <Link className="mobile-icon" to="/connect"><Share2 class="icon" stroke-width=".5" width="85" height="85"/></Link>
+                    <Link onClick={handleMinusClick} className="mobile-icon" to="/"><Home class="icon" stroke-width=".5" width="85" height="85"/></Link>
+                    <Link onClick={handleMinusClick} className="mobile-icon" to="/about-me"><HelpCircle class="icon" stroke-width=".5" width="85" height="85"/></Link>
+                    <Link onClick={handleMinusClick} className="mobile-icon" to="/project-catalog"><Layers class="icon" stroke-width=".5" width="85" height="85"/></Link>
+                    <Link onClick={handleMinusClick} className="mobile-icon" to="/work-journey"><Briefcase class="icon" stroke-width=".5" width="85" height="85"/></Link>
+                    <Link onClick={handleMinusClick} className="mobile-icon" to="/connect"><Share2 class="icon" stroke-width=".5" width="85" height="85"/></Link>
                 </div>
                 <MinusCircle id="minus-circle" class="icon" stroke-width=".5" width="85" height="85" onClick={handleMinusClick}/>
             </div>

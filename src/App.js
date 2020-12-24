@@ -18,8 +18,8 @@ const App = () => {
   return (
     <Navstate>
       <Grid container>
-        <Grid item md={2}/>
-          <Grid container item md={8}>
+        <Grid item xs={1} md={2}/>
+          <Grid container item xs={10} md={8}>
             <Grid container item xs={12} id="section-container">
                 <Switch>
                   <Route path='/about-me' component={SecondSection}/>
@@ -33,7 +33,7 @@ const App = () => {
               <MobileNav/>
             </Grid>
           </Grid>
-        <Grid item md={2}/>
+        <Grid item xs={1} md={2}/>
       </Grid>
     </Navstate>
   )
