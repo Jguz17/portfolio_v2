@@ -157,6 +157,9 @@ li {
     .second-section-content > p {
         font-size: 1.5rem;
     }
+    #second-header {
+        font-size: 2.25rem;
+    }
     #third-header {
         font-size: 2.25rem;
     }
