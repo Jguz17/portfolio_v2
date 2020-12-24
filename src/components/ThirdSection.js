@@ -4,7 +4,9 @@ import spcc from '../assets/images/spcc-image.jpg'
 import spcc2 from '../assets/images/spcc-2-admin.jpg'
 import recipeme from '../assets/images/recipeme-image.jpg'
 import insure from '../assets/images/insure-image.jpg'
-import Arrow from './layout/Arrow'
+import { ArrowDownCircle } from 'react-feather';
+import { Link } from 'react-router-dom'
+
 
 const ThirdSection = () => {
     return (
@@ -53,7 +55,10 @@ const ThirdSection = () => {
                 </Grid>
             </Grid>
             <Grid item container xs={12} style={{ justifyContent: "center", padding: "2rem" }}>
-                <Arrow/>
+                <Link to="/work-journey">
+                        <ArrowDownCircle stroke-width="1" width="30" height="30" style={{ fontSize: "1.5rem", marginTop: ".5rem" }}/>
+                        <p style={{ fontSize: "1.5rem" }}>Continue to work journey</p>
+                </Link>  
             </Grid>
         </Grid>
     )
