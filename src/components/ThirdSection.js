@@ -4,11 +4,12 @@ import spcc from '../assets/images/spcc-image.jpg'
 import spcc2 from '../assets/images/spcc-2-admin.jpg'
 import recipeme from '../assets/images/recipeme-image.jpg'
 import insure from '../assets/images/insure-image.jpg'
+import Arrow from './layout/Arrow'
 
 const ThirdSection = () => {
     return (
         <Grid container item xs={12} id="third-section" className="section">
-            <p style={{ fontSize: '3.5rem', position: 'absolute', top: '2.5%', left: '5%' }}>Project Catalog</p>
+            <p id="third-header" style={{ position: 'absolute', top: '2.5%', left: '5%' }}>Project Catalog</p>
             <Grid item container md={12} style={{ marginBottom: "5rem" }}>
                 <Grid item container md={6}><img src={spcc} alt="" style={{ width: "100%", maxHeight: "175px" }}/><img src={spcc2} alt="" style={{ width: "100%", maxHeight: "175px", marginTop: "1rem" }}/></Grid>
                 <Grid item container md={1}/>
@@ -23,20 +24,22 @@ const ThirdSection = () => {
                     <a href="https://superiorpristinecleaningcompany.netlify.app/admin">Link to admin</a>
                 </Grid>
             </Grid>
-            <Grid item container md={12} style={{ marginBottom: "5rem" }}>
-                <Grid item container md={5} style={{ flexFlow: "column", textAlign: "right" }}>
-                    <h2>Recipeme</h2>
-                    <p style={{ color: "#727272" }}>Html / Css / Material UI / JavaScript / React / Redux / Ruby On Rails</p>
-                    <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>For this project, I used Material UI to handle the responsiveness and used built-in components such as Card, Grid, and Buttons.
-                    This project has the user sign up / sign in to use its features like searching up an ingredient to pull up a list of recipes. When a user does this, it is making an API call to an external
-                    API. The user is able to add the recipes to their list, which is where Redux comes into play. As a recipe is created, it gets added to the store and updates the UI. A user is also able to delete
-                    recipes from their list.</p>
-                    <a href="https://recipeme.netlify.app/">Link to project</a>
+            <Grid className="project-row" item container md={12} style={{ marginBottom: "5rem" }}>
+                <Grid item container md={5} style={{ flexFlow: "column" }}>
+                    <div className="project">
+                        <h2>Recipeme</h2>
+                        <p style={{ color: "#727272" }}>Html / Css / Material UI / JavaScript / React / Redux / Ruby On Rails</p>
+                        <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>For this project, I used Material UI to handle the responsiveness and used built-in components such as Card, Grid, and Buttons.
+                        This project has the user sign up / sign in to use its features like searching up an ingredient to pull up a list of recipes. When a user does this, it is making an API call to an external
+                        API. The user is able to add the recipes to their list, which is where Redux comes into play. As a recipe is created, it gets added to the store and updates the UI. A user is also able to delete
+                        recipes from their list.</p>
+                        <a href="https://recipeme.netlify.app/">Link to project</a>
+                    </div>
                 </Grid>
                 <Grid item container md={1}/>
                 <Grid item container md={6}><img src={recipeme} alt="" style={{ width: "100%" }}/></Grid>
             </Grid>
-            <Grid item container md={12} style={{ paddingBottom: "5rem" }}>
+            <Grid item container md={12}>
                 <Grid item container md={6}><img src={insure} alt="" style={{ width: "100%" }}/></Grid>
                 <Grid item container md={1}/>
                 <Grid item container md={5} style={{ flexFlow: "column", textAlign: "left" }}>
@@ -48,6 +51,9 @@ const ThirdSection = () => {
                     whenever it is mobile. For some buttons and UI components, I used Bulma.</p>
                     <a href="https://insure-a-landing-page.netlify.app/">Link to project</a>
                 </Grid>
+            </Grid>
+            <Grid item container xs={12} style={{ justifyContent: "center", padding: "2rem" }}>
+                <Arrow/>
             </Grid>
         </Grid>
     )
