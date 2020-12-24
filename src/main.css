@@ -95,3 +95,101 @@ li {
     /* flex-flow: column; */
     /* align-items: center; */
 }
+
+.mobile-container {
+    position: fixed;
+    right: 2.5%;
+    bottom: 2.5%;
+}
+
+#third-header {
+    font-size: 3.5rem;
+}
+
+#fourth-header {
+    font-size: 3.5rem;
+}
+
+/* ==== MOBILE NAV STYLES ==== */
+
+#overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: rgba(229, 229, 229, .75);
+    display: none;
+}
+
+#minus-circle {
+    display: none;
+}
+
+.mobile-icons-container {
+    display: none;
+    flex-direction: column;
+}
+
+.mobile-icon {
+    padding-bottom: 1rem;
+}
+
+#tree-image {
+    max-height: 450px;
+}
+
+#skills-container {
+    padding: 0 3rem;
+    align-self: center;
+}
+
+#project-2 {
+    text-align: right; 
+}
+
+@media all and (max-width: 480px) { 
+    body {
+        background-image: url('./assets/images/mobile-bg-1.jpg');
+    }
+    .first-section-header-content {
+        font-size: 2rem;
+    }
+    .second-section-content > p {
+        font-size: 1.5rem;
+    }
+    #third-header {
+        font-size: 2.25rem;
+    }
+    #fourth-header {
+        font-size: 2.25rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .first-section-header-content {
+        font-size: 2.5rem;
+    }
+    #first-section img {
+        width: 65%;
+    }
+    .second-section-content {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    #tree-image {
+        max-height: 75vh;
+        margin: 0 auto;
+        max-width: 80vw;
+    }
+    .second-section-content div {
+        padding: 0
+    }
+    #skills-container {
+        padding: 1rem 0;
+    }
+    .project-row {
+        flex-direction: column-reverse;
+    }
+    .project {
+        text-align: left;
+    }
+}

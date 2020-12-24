@@ -3,11 +3,12 @@ import Grid from '@material-ui/core/Grid';
 import hungr from '../assets/images/hungr.jpg'
 import zenyx from '../assets/images/zenyx.jpg'
 import vitl from '../assets/images/vitle-media.jpg'
+import Arrow from './layout/Arrow'
 
 const FourthSection = () => {
     return (
         <Grid container item xs={12} id="fourth-section" className="section">
-            <p style={{ fontSize: '3.5rem', position: 'absolute', top: '2.5%', left: '5%' }}>Work Journey</p>
+            <p id="fourth-header" style={{ position: 'absolute', top: '2.5%', left: '5%' }}>Work Journey</p>
             <Grid item container md={12} style={{ marginBottom: "5rem" }}>
                 <Grid item container md={6} style={{ alignItems: "center" }}><img src={hungr} alt="" style={{ width: "100%", maxHeight: "175px" }}/></Grid>
                 <Grid item container md={1}/>
@@ -20,13 +21,15 @@ const FourthSection = () => {
                     ability to work with remote APIs and third-party web services, loading data asynchronously, understanding state management, using JavaScript templates and dynamic views.</p>
                 </Grid>
             </Grid>
-            <Grid item container md={12} style={{ marginBottom: "5rem" }}>
+            <Grid className="project-row" item container md={12} style={{ marginBottom: "5rem" }}>
                 <Grid item container md={5} style={{ flexFlow: "column", textAlign: "right" }}>
-                    <h2>Zenyx, LLC</h2>
-                    <p style={{ color: "#727272" }}>Frontend Engineer</p>
-                    <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>Wrote clean, well designed, and scalable code. Responsible for creating and maintaining a suite of cutting edge back-of-house web applications, point-of-sale APIs, 
-                    and Android client applications in a fast-paced results-oriented environment. Complex API interactions from single page application frontend. Streamled Front End build pipelines. Built front ends in Typescript.
-                    Built and maintained code in JavaScript and Node.js.</p>
+                    <div className="project">
+                        <h2>Zenyx, LLC</h2>
+                        <p style={{ color: "#727272" }}>Frontend Engineer</p>
+                        <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>Wrote clean, well designed, and scalable code. Responsible for creating and maintaining a suite of cutting edge back-of-house web applications, point-of-sale APIs, 
+                        and Android client applications in a fast-paced results-oriented environment. Complex API interactions from single page application frontend. Streamled Front End build pipelines. Built front ends in Typescript.
+                        Built and maintained code in JavaScript and Node.js.</p>
+                    </div>
                 </Grid>
                 <Grid item container md={1}/>
                 <Grid item container md={6} style={{ alignItems: "center" }}><img src={zenyx} alt="" style={{ width: "100%", maxHeight: "175px"}}/></Grid>
@@ -44,6 +47,9 @@ const FourthSection = () => {
                     Providing guidance around front-end best practices and documentation while researching and exploring new frameworks/libraries the teams can be leveraging.</p>
                 </Grid>
             </Grid>
+            <Grid item container xs={12} style={{ justifyContent: "center", padding: "2rem" }}>
+                <Arrow/>
+            </Grid>   
         </Grid>
     )
 }
