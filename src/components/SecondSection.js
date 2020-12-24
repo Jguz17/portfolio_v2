@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const SecondSection = () => {
     return (
         <div id="second-section" className="section">
-            <p id="second-header" style={{ fontSize: '3.5rem', position: 'absolute', top: '2.5%', left: '5%' }}>A little about me</p>
+            <p id="second-header" style={{ position: 'absolute', top: '2.5%', left: '5%' }}>A little about me</p>
             <div className="second-section-content" style={{ marginTop: '1rem' }}>
                 <img id="tree-image" src={TreeImage} alt=""/>
                 <div id="skills-container">

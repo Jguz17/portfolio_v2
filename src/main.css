@@ -147,6 +147,10 @@ li {
     text-align: right; 
 }
 
+#second-header {
+    font-size: 2.25rem;
+}
+
 @media all and (max-width: 480px) { 
     body {
         background-image: url('./assets/images/mobile-bg-1.jpg');
