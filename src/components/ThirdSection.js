@@ -4,6 +4,7 @@ import spcc from '../assets/images/spcc-image.jpg'
 import spcc2 from '../assets/images/spcc-2-admin.jpg'
 import recipeme from '../assets/images/recipeme-image.jpg'
 import insure from '../assets/images/insure-image.jpg'
+import Arrow from './layout/Arrow'
 
 const ThirdSection = () => {
     return (
@@ -48,6 +49,9 @@ const ThirdSection = () => {
                     whenever it is mobile. For some buttons and UI components, I used Bulma.</p>
                     <a href="https://insure-a-landing-page.netlify.app/">Link to project</a>
                 </Grid>
+            </Grid>
+            <Grid item container xs={12} style={{ justifyContent: "center", padding: "2rem" }}>
+                <Arrow/>
             </Grid>
         </Grid>
     )

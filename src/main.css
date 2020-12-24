@@ -95,3 +95,16 @@ li {
     /* flex-flow: column; */
     /* align-items: center; */
 }
+
+@media all and (max-width: 480px) { 
+    body {
+        background-image: url('./assets/images/mobile-bg-1.jpg');
+    }
+}
+
+/* ==== MOBILE NAV STYLES ==== */
+/* #plus-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} */

@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import hungr from '../assets/images/hungr.jpg'
 import zenyx from '../assets/images/zenyx.jpg'
 import vitl from '../assets/images/vitle-media.jpg'
+import Arrow from './layout/Arrow'
 
 const FourthSection = () => {
     return (
@@ -44,6 +45,9 @@ const FourthSection = () => {
                     Providing guidance around front-end best practices and documentation while researching and exploring new frameworks/libraries the teams can be leveraging.</p>
                 </Grid>
             </Grid>
+            <Grid item container xs={12} style={{ justifyContent: "center", padding: "2rem" }}>
+                <Arrow/>
+            </Grid>   
         </Grid>
     )
 }

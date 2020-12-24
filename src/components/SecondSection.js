@@ -1,5 +1,6 @@
 import React from 'react'
 import TreeImage from '../assets/images/tree.jpg'
+import Arrow from './layout/Arrow'
 
 const SecondSection = () => {
     return (
@@ -41,6 +42,7 @@ const SecondSection = () => {
                     </div>
                 </div>
             </div>
+            <Arrow/>
         </div>
     )
 }
