@@ -27,7 +27,7 @@ const ThirdSection = () => {
                 </Grid>
             </Grid>
             <Grid className="project-row" item container md={12} style={{ marginBottom: "5rem" }}>
-                <Grid item container md={5} style={{ flexFlow: "column" }}>
+                <Grid item container md={5} style={{ flexFlow: "column", textAlign: "right" }}>
                     <div className="project">
                         <h2>Recipeme</h2>
                         <p style={{ color: "#727272" }}>Html / Css / Material UI / JavaScript / React / Redux / Ruby On Rails</p>
