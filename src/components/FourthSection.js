@@ -8,50 +8,50 @@ import { Link } from 'react-router-dom'
 
 const FourthSection = () => {
     return (
-        <Grid container item xs={12} id="fourth-section" className="section">
+        <Grid container item xs={12} id="fourth-section" className="section text-align-center">
             <p id="fourth-header" style={{ position: 'absolute', top: '2.5%', left: '5%' }}>Work Journey</p>
-            <Grid item container md={12} style={{ marginBottom: "5rem" }}>
-                <Grid item container md={6} style={{ alignItems: "center" }}><img src={hungr} alt="" style={{ width: "100%", maxHeight: "175px" }}/></Grid>
-                <Grid item container md={1}/>
-                <Grid item container md={5} style={{ flexFlow: "column", textAlign: "left" }}>
+            <Grid id="fourth-section-first-div" item container md={12} style={{ marginBottom: "5rem" }}>
+                <Grid className="text-align-right" item container md={5} style={{ flexFlow: "column" }}>
                     <h2>Hungr</h2>
-                    <p style={{ color: "#727272" }}>Frontend Developer</p>
-                    <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>Developed an understanding of React.js and its core principles including State & Props and React Lifecycle.
-                    Used Sass to style elements for compatibility and adherence to client style and design.
-                    Interacting with Development and Client Services teams to collaborate on solution quality and functionality.
-                    ability to work with remote APIs and third-party web services, loading data asynchronously, understanding state management, using JavaScript templates and dynamic views.</p>
-                </Grid>
-            </Grid>
-            <Grid className="project-row" item container md={12} style={{ marginBottom: "5rem" }}>
-                <Grid item container md={5} style={{ flexFlow: "column", textAlign: "right" }}>
-                    <div className="project">
-                        <h2>Zenyx, LLC</h2>
-                        <p style={{ color: "#727272" }}>Frontend Engineer</p>
-                        <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>Wrote clean, well designed, and scalable code. Responsible for creating and maintaining a suite of cutting edge back-of-house web applications, point-of-sale APIs, 
-                        and Android client applications in a fast-paced results-oriented environment. Complex API interactions from single page application frontend. Streamled Front End build pipelines. Built front ends in Typescript.
-                        Built and maintained code in JavaScript and Node.js.</p>
-                    </div>
+                    <p style={{ color: "#727272" }}>Software Engineer</p>
+                    <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>Hungr is a startup that I worked with for about 3 months. Even though it was a short time, we worked on a bunch of assignments.
+                    For a few of these assignments, I was in charge of creating frontends. For instance, we were working on the company's mobile app
+                    and I was tasked with building the frontend for the consumer login and the main company website. I wasn't only working on frontends though. I also 
+                    contributed to backends on other projects the company was working on. Like setting up the logic behind a user adding an item to their cart.</p>
                 </Grid>
                 <Grid item container md={1}/>
-                <Grid item container md={6} style={{ alignItems: "center" }}><img src={zenyx} alt="" style={{ width: "100%", maxHeight: "175px"}}/></Grid>
+                <Grid item container md={6} style={{ alignItems: "center" }}><img src={hungr} alt="" style={{ width: "100%", maxHeight: "175px" }}/></Grid>
             </Grid>
             <Grid item container md={12} style={{ paddingBottom: "5rem" }}>
                 <Grid item container md={6} style={{ justifyContent: "center", alignItems: "center" }}><img src={vitl} alt="" style={{ width: "100%", maxHeight: "200px", maxWidth: "200px" }}/></Grid>
                 <Grid item container md={1}/>
-                <Grid item container md={5} style={{ flexFlow: "column", textAlign: "left" }}>
+                <Grid className="text-align-left" item container md={5} style={{ flexFlow: "column" }}>
                     <h2>Vitl Media</h2>
-                    <p style={{ color: "#727272" }}>Frontend Software Engineer</p>
-                    <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>Deep understanding of object-oriented programming, function writing, APIs, etc. to articulate back-end requirements.
-                    Experience creating component-based architecture for reusability, uniformity, and efficiency.
-                    Collaborating with business and technology teams on developing front-end applications that enable the firm to work smarter and faster, while broadening the impact on how the trading teams leverage and visualize data.
-                    Participating in brainstorming sessions and have the chance to contribute innovative and original ideas to the technology platform in a highly collaborative, team-oriented environment.
-                    Providing guidance around front-end best practices and documentation while researching and exploring new frameworks/libraries the teams can be leveraging.</p>
+                    <p style={{ color: "#727272" }}>Full-Stack Software Engineer</p>
+                    <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>I've been working with Vitl Media for about a year now and we've worked with quite a handful of clients. From lawn mowing businesses to nail salons to law offices and bloggers. We kind of work with all
+                    types of businesses! We focus on a more SEO and Blogging sort of approach when working with businesses. That was mainly what the workload consisted of. Other than that, we also 
+                    provided consulting, where a client wants to learn more or guidance on how to approach their online presence. Occasionally, we had the ecommerce projects
+                    where a client has some type of product or service they wanted to sell. We would usually use Shopify for these projects, if not, then Woocommerce.</p>
                 </Grid>
             </Grid>
+            <Grid className="project-row reverse" item container md={12} style={{ marginBottom: "5rem" }}>
+                <Grid className="text-align-right" item container md={5} style={{ flexFlow: "column" }}>
+                    <div className="project">
+                        <h2>Zenyx, LLC</h2>
+                        <p style={{ color: "#727272" }}>Full-Stack Software Engineer</p>
+                        <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>Zenyx LLC, was actually the first digital agency I worked with, after I started freelancing.
+                        Just like Vitl Media, we worked with a variety of clients, but with a more of a saas approach. We helped already established businesses ease their workflow
+                        by providing custom software. One of my favorite projects was collaberating with a team to build a POS/Inventory app for modern
+                        yet small grocery stores.</p>
+                    </div>
+                </Grid>
+                <Grid item container md={1}/>
+                <Grid item container md={6} style={{ alignItems: "center" }}><img src={zenyx} alt="" style={{ width: "100%", maxHeight: "175px"}}/></Grid>
+            </Grid>  
             <Grid item container xs={12} style={{ justifyContent: "center", padding: "2rem" }}>
                 <Link to="/connect">
                         <ArrowDownCircle stroke-width="1" width="30" height="30" style={{ fontSize: "1.5rem", marginTop: ".5rem" }}/>
-                        <p style={{ fontSize: "1.5rem" }}>Continue to conntect!</p>
+                        <p style={{ fontSize: "1.5rem" }}>Continue to connect!</p>
                 </Link>  
             </Grid>   
         </Grid>
