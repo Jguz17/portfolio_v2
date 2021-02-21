@@ -47,7 +47,7 @@ const ThirdSection = () => {
                     <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>I actually built this project to help me better find local businesses that might need a website. So, I did just that, haha.
                     A user is able to plug in a desired address and choose from a variety of types of small businesses and in return will receive
                     a list of businesses within a 1 mile radius. HOWEVER. I use something called Google Places API, where google provides us with 
-                    these businesses information. Super awesome, but the downside is there is a limit to how many time a user
+                    these businesses information. Super awesome, but the downside is there is a limit to how many times a user
                     can request the business information. So if it doesn't work right away, wait a few seconds or try again in about 30 minutes (that's usually how long it will take for it to go back to normal).</p>
                     <a href="https://google-leads.netlify.app/"><b>Link to site</b></a>
                 </Grid>
