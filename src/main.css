@@ -51,7 +51,7 @@ li {
 }
 
 .section {
-    max-height: 435px;
+    max-height: 500px;
     /* display: flex; */
 }
 
@@ -59,10 +59,22 @@ li {
     cursor: pointer;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
 /* ==== FIRST SECTION STYLES ==== */
 #section-container {
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     height: 100vh;
     align-items: center;
     flex-flow: column;
@@ -148,12 +160,19 @@ li {
 }
 
 #second-header {
-    font-size: 2.25rem;
+    font-size: 3.5rem;
 }
 
 #third-section a {
     font-size: 1.15rem;
 }
+/* 
+.text-align .left {
+    text-align: left;
+}
+.text-align .right {
+    text-align: right;
+} */
 
 @media all and (max-width: 480px) { 
     body {
@@ -210,9 +229,7 @@ li {
     .project-row {
         flex-direction: column-reverse;
     }
-    .project {
-        text-align: left;
-    }
+    
 }
 
 @media all and (min-width: 769px) {
@@ -221,5 +238,18 @@ li {
     }
     .mobile-container {
         display: none;
+    }
+}
+
+@media all and (max-width: 959px) {
+    #fourth-section-first-div {
+        flex-flow: column-reverse;
+    }
+    .text-align-left,
+    .text-align-right {
+        text-align: center;
+    }
+    .reverse {
+        flex-flow: column-reverse;
     }
 }
