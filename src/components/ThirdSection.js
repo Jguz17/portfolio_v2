@@ -33,7 +33,7 @@ const ThirdSection = () => {
                 <Grid item container md={6}><img src={spcc} alt="" style={{ width: "100%", maxHeight: "175px" }}/><img src={spcc2} alt="" style={{ width: "100%", maxHeight: "175px", marginTop: "1rem" }}/></Grid>
                 <Grid item container md={1}/>
                 <Grid className="text-align-left" item container md={5} style={{ flexFlow: "column" }}>
-                    <div className="project">\
+                    <div className="project">
                         <h2>Superior Prostine Cleaning Company</h2>
                         <p style={{ color: "#727272" }}>Html / Css / Bootstrap / JavaScript / Node.js / Express.js</p>
                         <p style={{ fontSize: "1.25rem", paddingTop: ".5rem" }}>This project consists of two frontends: one for regular users and another for the admin. I created
